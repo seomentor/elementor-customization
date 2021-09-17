@@ -1,0 +1,376 @@
+<!-- Created By seoMentor - www.seomentor.co.il -->
+<nav>
+    <div class="wrapper">
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li>
+        </li>
+        <li>
+          <a href="#" class="desktop-item">Mega Menu 1</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Mega Menu 1</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <header>Header 1</header>
+                <ul class="mega-links">
+                  <li><a href="#">Link 1</a></li>                    
+                </ul>
+              </div>
+                            <div class="row">
+                <header>Header 2</header>
+                <ul class="mega-links">
+                  <li><a href="#">Link 2</a></li>
+                </ul>
+              </div>
+
+              <div class="row">
+                <header>Header 3</header>
+                <ul class="mega-links">
+                  <li> <a href="#"> Link 3 </a> </li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Header 4</header>
+                <ul class="mega-links">
+                  <li><a href="#">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="desktop-item">Mega Menu 2</a>
+          <input type="checkbox" id="showMega2">
+          <label for="showMega2" class="mobile-item">Mega Menu 2</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <header>Header 1</header>
+                <ul class="mega-links">
+                  <li><a href="#">text?</a></li>
+                       
+                </ul>
+              </div>
+              <div class="row">
+                <header>Header 2</header>
+                <ul class="mega-links">
+                  <li><a href="#">text</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </li>
+          <li><a href="#">Regular Link</a></li>
+        <li>
+          <a href="#" class="desktop-item">Mega Menu 3</a>
+          <input type="checkbox" id="showMega3">
+          <label for="showMega3" class="mobile-item">Mega Menu 3</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <header>Header 1</header>
+                <ul class="mega-links">
+                  <li><a href="#">Link 1</a></li>              
+                </ul>
+              </div>
+              <div class="row">
+                <header>Header 2</header>
+                <ul class="mega-links">
+                  <li><a href="#">Link 2</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </li>
+        <li>
+          <a href="#" class="desktop-item">Mega Menu 4</a>
+          <input type="checkbox" id="showMega4">
+          <label for="showMega4" class="mobile-item">Mega Menu 4</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <header>Header 1</header>
+                <ul class="mega-links">
+                  <li><a href="#">Link 1</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Header 2</header>
+                <ul class="mega-links">
+                  <li><a href="#">Link 2</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+
+<style>
+nav{
+  position: relative;
+  z-index: 999;
+  width: 100%;
+}
+
+nav .wrapper{
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+  height: 20px;
+  line-height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .nav-links{
+  display: inline-flex;
+  margin: auto;
+
+}
+.nav-links ul {
+    padding: 0px;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links li a{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+
+}
+.nav-links li a:hover{
+  background: #f5f5f5;
+}
+.nav-links .mobile-item{
+  display: none;
+}
+.nav-links .drop-menu{
+  position: absolute;
+  background: #f5f5f5;
+  width: 180px;
+  line-height: 45px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+.nav-links li:hover .drop-menu,
+.nav-links li:hover .mega-box{
+  transition: all 0.3s ease;
+  top: 72px;
+  opacity: 1;
+  visibility: visible;
+}
+.drop-menu li a{
+  width: 100%;
+  display: block;
+  color: black;
+  font-weight: 400;
+  border-radius: 0px;
+}
+.mega-box{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #f5f5f5;
+  z-index: 999;
+}
+.mega-box .content{
+  padding:20px;
+  background: #f5f5f5;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+.mega-box .content .row{
+  width: calc(25% - 30px);
+  line-height: 15px;
+  
+}
+.content .row header{
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+.content .row .mega-links{
+  border-left: 1px;
+  border-color: black;
+
+    
+}
+.row .mega-links li{
+}
+.row .mega-links li a{
+  color: black;
+  font-size: 15px;
+  display: block;
+}
+.row .mega-links li a:hover{
+  color: silver;
+}
+.wrapper .btn{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.wrapper .btn.close-btn{
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+@media screen and (max-width: 970px) {
+  .wrapper .btn{
+    display: block;
+    color: black;
+  }
+  .wrapper .nav-links{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    top: 0;
+    left: -100%;
+    background: #f5f5f5;
+    display: block;
+    padding: 50px 10px;
+    line-height: 50px;
+    overflow-y: auto;
+    box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
+    transition: all 0.3s ease;
+
+  }
+  /* custom scroll bar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3A3B3C;
+  }
+  #menu-btn:checked ~ .nav-links{
+    left: 0%;
+  }
+  #menu-btn:checked ~ .btn.menu-btn{
+    display: none;
+  }
+  #close-btn:checked ~ .btn.menu-btn{
+    display: block;
+  }
+  .nav-links li{
+    margin: 20px 10px;
+  }
+  .nav-links li a{
+    padding: 0 20px;
+    display: block;
+    font-size: 20px;
+  }
+  .nav-links .drop-menu{
+    position: static;
+    opacity: 1;
+    top: 65px;
+    visibility: visible;
+    padding-left: 20px;
+    width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+    box-shadow: none;
+    transition: all 0.3s ease;
+  }
+  #showDrop:checked ~ .drop-menu,
+  #showMega:checked ~ .mega-box{
+    max-height: 100%;
+  }
+  #showDrop2:checked ~ .drop-menu,
+  #showMega2:checked ~ .mega-box{
+    max-height: 100%;
+  }
+  #showDrop3:checked ~ .drop-menu,
+  #showMega3:checked ~ .mega-box{
+    max-height: 100%;
+  }
+  #showDrop4:checked ~ .drop-menu,
+  #showMega4:checked ~ .mega-box{
+    max-height: 100%;
+  }
+  .nav-links .desktop-item{
+    display: none;
+  }
+  .nav-links .mobile-item{
+    display: block;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .nav-links .mobile-item:hover{
+    background: #3A3B3C;
+  }
+  .drop-menu li{
+    margin: 0;
+  }
+  .drop-menu li a{
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  .mega-box{
+    position: static;
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    padding: 0 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .mega-box .content{
+    box-shadow: none;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+  }
+  .mega-box .content .row{
+    width: 100%;
+    margin-bottom: 15px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .mega-box .content .row:nth-child(1),
+  .mega-box .content .row:nth-child(2){
+    border-top: 0px;
+  }
+  .content .row .mega-links{
+    border-left: 0px;
+    padding-left: 15px;
+  }
+  .row .mega-links li{
+    margin: 0;
+  }
+  .content .row header{
+    font-size: 19px;
+  }
+}
+nav input{
+  display: none;
+}
+</style>
