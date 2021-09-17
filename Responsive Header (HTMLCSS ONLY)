@@ -6,8 +6,6 @@
       <ul class="nav-links">
         <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
         <li>
-        </li>
-        <li>
           <a href="#" class="desktop-item">Mega Menu 1</a>
           <input type="checkbox" id="showMega">
           <label for="showMega" class="mobile-item">Mega Menu 1</label>
@@ -19,7 +17,7 @@
                   <li><a href="#">Link 1</a></li>                    
                 </ul>
               </div>
-                            <div class="row">
+              <div class="row">
                 <header>Header 2</header>
                 <ul class="mega-links">
                   <li><a href="#">Link 2</a></li>
@@ -32,6 +30,7 @@
                   <li> <a href="#"> Link 3 </a> </li>
                 </ul>
               </div>
+              
               <div class="row">
                 <header>Header 4</header>
                 <ul class="mega-links">
@@ -41,6 +40,7 @@
             </div>
           </div>
         </li>
+        
         <li>
           <a href="#" class="desktop-item">Mega Menu 2</a>
           <input type="checkbox" id="showMega2">
@@ -51,9 +51,9 @@
                 <header>Header 1</header>
                 <ul class="mega-links">
                   <li><a href="#">text?</a></li>
-                       
                 </ul>
               </div>
+              
               <div class="row">
                 <header>Header 2</header>
                 <ul class="mega-links">
@@ -65,7 +65,7 @@
           </li>
           <li><a href="#">Regular Link</a></li>
         <li>
-          <a href="#" class="desktop-item">Mega Menu 3</a>
+            <a href="#" class="desktop-item">Mega Menu 3</a>
           <input type="checkbox" id="showMega3">
           <label for="showMega3" class="mobile-item">Mega Menu 3</label>
           <div class="mega-box">
